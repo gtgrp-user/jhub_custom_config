@@ -3,6 +3,8 @@
   {% set announcement = announcement_login %}
 {% endif %}
 
+<img src="/hub/logo" alt="gt-logo" class="page-logo" title="logo">
+
 {% block login_widget %}
 {% endblock %}
 
@@ -10,7 +12,6 @@
 
 {% block login %}
 <div id="login-main" class="container">
-<img src="/hub/logo" alt="gt-logo" class="page-logo" title="logo">
 {% block login_container %}
 {% if custom_html %}
 {{ custom_html | safe }}
