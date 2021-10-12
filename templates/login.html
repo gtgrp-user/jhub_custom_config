@@ -28,12 +28,6 @@
 		}
 	</style>
 </head>
-
-<div id="header" container>
-	<img src="/hub/logo" alt="gt-logo" class="page-logo" title="logo">
-	<h4 style="color: #000f3e;font-weight: 600;">GlobalTrust Jupyter Hub</h4>
-</div>
-  
 {% block login %}
 <div id="login-main" class="container">
 {% block login_container %}
@@ -41,6 +35,36 @@
 {{ custom_html | safe }}
 {% elif login_service %}
 <div class="service-login">
+  <div class="container text-center announcement alert alert-warning">
+  <p lang="fr">NOUVEAU: L'interface de la Sandbox est désormais disponible en français. En savoir
+<a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/changer-la-langue-de-l-interface-de-la-sandbox-en-fran%C3%A7ais" target="_blank">plus</a>.
+
+<br><br><p lang="fr">NOUVEAU : nous testons l'accès à plus de ressources de calcul !
+En plus de l'instance Sandbox standard de 16 Go, vous pouvez désormais utiliser une instance de 32 Go.
+Veuillez sélectionner la plus petite instance qui convient à votre flux de travail afin que nous puissions
+allouer les ressources efficacement. Consultez l'article de la base de connaissances pour en savoir plus
+<a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/what-are-the-details-of-sept-nov-2021-de-africa-sandbox-large-instance-trial" target="_blank">ici en EN</a>
+ou <a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/quels-so" target="_blank">ici en FR</a>.
+Cet essai se déroulera jusqu'à fin novembre 2021.</p>
+
+<br><br>NEW: The Sandbox interface is now available in French. Find out
+<a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/change-sandbox-interface-language-to-french-28-9-2021" target="_blank">more</a>.
+
+<br><br>NEW: We are trialling access to more computational resources! In addition to the regular 16 GB Sandbox instance,
+you can now use a 32 GB instance. Please select the smallest instance that suits your workflow so we can allocate resources efficiently.
+Check out the Knowledge Base article to find out more <a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/what-are-the-details-of-sept-nov-2021-de-africa-sandbox-large-instance-trial" target="_blank">here in EN</a>
+or <a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/quels-so" target="_blank">here in FR</a>.
+This trial will run through to the end of Nov 2021.
+
+<br><br>Find out more about Digital Earth Africa data and products by reading the
+<a href="https://docs.digitalearthafrica.org/en/latest/" target="_blank">documentation</a>.
+Learn tips and tricks by taking our <a href="https://training.digitalearthafrica.org/en/latest/" target="_blank">training course</a>.
+
+</div>
+  <div>
+	<img src="/hub/logo" alt="gt-logo" class="page-logo" title="logo">
+  </div>
+  <h4 style="color: #000f3e;font-weight: 600;">GlobalTrust Jupyter Hub</h4>
   <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
     Sign in with {{login_service}}
   </a>
