@@ -28,13 +28,6 @@
 		}
 	</style>
 </head>
-{% block login %}
-<div id="login-main" class="container">
-{% block login_container %}
-{% if custom_html %}
-{{ custom_html | safe }}
-{% elif login_service %}
-<div class="service-login">
   <div class="container text-center announcement alert alert-warning">
   <p lang="fr">NOUVEAU: L'interface de la Sandbox est désormais disponible en français. En savoir
 <a href="https://helpdesk.digitalearthafrica.org/portal/en/kb/articles/changer-la-langue-de-l-interface-de-la-sandbox-en-fran%C3%A7ais" target="_blank">plus</a>.
@@ -61,6 +54,13 @@ This trial will run through to the end of Nov 2021.
 Learn tips and tricks by taking our <a href="https://training.digitalearthafrica.org/en/latest/" target="_blank">training course</a>.
 
 </div>
+{% block login %}
+<div id="login-main" class="container">
+{% block login_container %}
+{% if custom_html %}
+{{ custom_html | safe }}
+{% elif login_service %}
+<div class="service-login">
   <div>
 	<img src="/hub/logo" alt="gt-logo" class="page-logo" title="logo">
   </div>
